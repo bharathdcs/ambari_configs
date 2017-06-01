@@ -149,7 +149,7 @@ public class App
 				}
 
 			}
-			BufferedWriter configWriter=new BufferedWriter(new FileWriter(nameOfConfig+".json"));
+			BufferedWriter configWriter=new BufferedWriter(new FileWriter(nameOfConfig+System.currentTimeMillis()+".json"));
 			configWriter.write(processedJson);
 			configWriter.flush();
 			configWriter.close();
